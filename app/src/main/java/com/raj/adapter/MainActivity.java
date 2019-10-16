@@ -11,6 +11,7 @@ import com.raj.adapter.com.adapter.IPhone;
 import com.raj.adapter.com.adapter.IPhoneCharger;
 import com.raj.adapter.com.adapter.IPhoneX;
 import com.raj.adapter.com.adapter.OnePlus5;
+import com.raj.adapter.facade.FacadePhone;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
            Immutable
            inner static class
          */
+      //----------------------------------------------------------------------------------------
+
+
+        FacadePhone facadePhone = new FacadePhone();
+
+        System.out.println(facadePhone.buildAndroidPhone());
+        System.out.println(facadePhone.buildApplePhone());
+
+
 
     }
 }
